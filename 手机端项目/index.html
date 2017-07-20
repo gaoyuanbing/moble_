@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script src="jquery-1.11.1.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<link href="js/jquery.mobile-1.4.5.css"  rel="stylesheet"></script>
+		 <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+		<style>
+			 .img{width: 80px; height: 80px; box-shadow: 2px 2px 2px blueviolet;}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<div data-role="page" id="home">
+			<!--头部信息-->
+			<div data-role="header" data-theme="b">
+				<h1 >个人登陆</h1>
+				<a href="#" data-role="button" data-icon="gear" data-shadow='true'>设置</a>
+				<a href="#" data-role="button" data-icon=""user>注册</a>
+			</div>
+			<!--主体内容-->
+			<div data-role="content">
+					<label for="username">用户注册：</label>
+					
+					<!--	这里要改变input的值光标聚焦事件-->
+					
+					<input type="text" id="username" name="username" data-conners="true" data-shadow="true"/></li>
+					
+					<label for="password">请输入密码：</label>
+					
+					<!--	这里要改变input的值光标聚焦事件-->
+					<input type="password" name="password" id="password" data-conners="true" data-shadow="true"/>
+					
+					<input type="checkbox" data-role="none" id="checkbox-0"/>
+					<label for="checkbox-0">记住密码</label>
+					
+					<input type="checkbox" data-role="none" id="checkbox-0"/>
+					<label for="checkbox-0">自动登陆</label>
+					
+			</div>
+
+			<!--尾部信息-->
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<div data-role="navbar" >
+					<ul>
+						<li><a href="#result" data-role="button" data-icon="back" data-transition="slide">登陆提醒</a></li>
+						<li><a href="#main" data-role="button" data-icon="carat-r" data-transition="slide">直接登陆</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+<!------------------------------------------------------------------------		-->			
+		<!--提示内容-->
+		<div data-role="page" id="result">
+			
+			<div data-role="header" data-theme="b">
+				<h1>提示信息</h1>
+			</div>
+			
+			<div data-role="content">
+				提示内容
+			</div>
+			
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<div data-role="navbar" >
+					<ul>
+						<li>
+							<a href="#home" data-icon="forward">重新登录</a></h1>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+<!------------------------------------------------------------------------		-->			
+		<!--直接登陆页面-->
+		<div data-role="page" id="main">
+				
+			<div data-role="header" data-theme="b">
+				<h1>工作任务</h1>
+				<a href="#home"  data-icon="back" >返回上一层</a>
+			</div>
+			
+			<div data-role="content">
+					
+				<ul data-role='listview' data-inset="true">
+					<li>
+						<a href="#">
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491116384983&di=4c6bab84a46608fa76fcbb16290600e3&imgtype=0&src=http%3A%2F%2Fc.hiphotos.baidu.com%2Fzhidao%2Fwh%253D450%252C600%2Fsign%3Df1b167548744ebf86d246c3becc9fb1c%2F8b82b9014a90f603e95cc2103912b31bb151edfd.jpg" />
+							<h1>你瞅啥</h1>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1491116388975&di=c1fa415d4b17ee70539451754feb23c2&imgtype=0&src=http%3A%2F%2Fwww.k68.cn%2Fupfiles5%2F2006.05.22.21.59.49.01.gif" />
+							<h1>瞅你咋滴</h1>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1041925636,960242662&fm=21&gp=0.jpg" />
+							<h1>你好帅啊</h1>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3567117024,3950088759&fm=21&gp=0.jpg" />
+							<h1>想干啥</h1>
+						</a>
+					</li>
+
+				</ul>
+				
+			</div>
+			
+			<div data-role="footer" data-theme="b" data-position="fixed">
+				<div data-role="navbar">
+					<ul>
+						<li ><a href="#main" data-icon="grid" data-role = "checked">工作</a></li>
+						<li ><a href="#pageee" data-icon="info">猪猪相册</a></li>
+						<li ><a href="#" data-icon="gear">设置</a></li>
+						<li ><a href="#" data-icon="search">地图</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+<!------------------------------------------------------------------------		-->	
+		<div data-role="page" id="pageee">
+			
+			<div data-role="header" data-theme = "b">
+				<h1>她是一只幸福的猪</h1>
+				<a href="#main" data-role="buttun" data-icon="back" data-transition="slidedown">返回</a>
+			</div>
+			
+			<div data-role="content">
+				<div class="ui-grid-b">
+					<div class="ui-block-a" >
+						<img src="img/IMG_1631.JPG" class="img"/>
+					</div>
+					<div class="ui-block-b" >
+						<img src="img/IMG_1651.JPG" class="img"/>
+					</div >
+					<div class="ui-block-c">
+						<img src="img/IMG_1632.JPG"  class="img" />
+					</div>
+					<div class="ui-block-a">
+						<img src="img/IMG_1771.JPG"  class="img" />
+					</div>
+					<div class="ui-block-b">
+						<img src="img/IMG_1765.JPG"  class="img" />
+					</div>
+					<div class="ui-block-b">
+						<img src="img/IMG_1930.JPG"  class="img" />
+					</div>
+				</div>
+			</div>
+			
+			<div data-role="footer">
+				
+			</div>
+		</div>
+	</body>
+</html>

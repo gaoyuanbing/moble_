@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.1.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+		<link href="js/jquery.mobile-1.4.5.css"  rel="stylesheet"></script>
+		<meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
+		<style>
+			.content-box{border: 1px solid silver;
+			 background: silver;height: 300px;border-radius: 10px;margin-top: 150px;} 	
+			#content{background: url(img/IMG_0433.JPG);height: 600px;color: blue;text-shadow: 2px 2px 2px mediumorchid;}
+			.box-header img:nth-of-type(1){width: 30px;height: 30px;}
+			.text{font-size: 10px;text-indent: 2em;}
+			.header-box1{margin-top: 10px;margin-left: 10px;}
+			.content-box ul{margin-top: -100px;}
+			.content-box li{float: left;height: 50px; width: 50px;border-radius: 5px;list-style: none;margin-left: 10px;}
+			.content-box li:nth-last-of-type(4){background: orange;}
+			.content-box li:nth-last-of-type(3){background: slateblue;}
+			.content-box li:nth-last-of-type(2){background: greenyellow;}
+			.content-box li:nth-last-of-type(1){background: dodgerblue;}
+		</style>
+	</head>
+	<body>
+		<div data-role='page' id="home">
+<!--这是头部-->
+			<div data-role='header' data-theme='b' data-position="fixed">
+				<h1></h1>
+				<a href="#" data-role="button" data-icon='mail'>
+					
+				</a>
+				<a href="#" data-role="button" data-icon='plus'>
+					
+				</a>
+			</div>
+<!--这是content-->
+			<div data-role='content' id="content">
+<!--中间框域-->
+				<div class="content-box" data-inset='true'>
+					
+					<div class="box-header">
+						<div class="header-box1">
+							<img src="img/IMG_1631.JPG" />360安全路由器<span>后台传输文字</span>
+							<p class="text">当前网络<span>wangsu</span>,<span>2</span>个小伙伴连接中</p>
+						</div>
+						
+						<div class="content-box">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<!--这是footer-->
+			<div data-role='footer' data-position="fixed" data-theme='b'>
+				<div data-role='navbar'>
+					<ul>
+						<li><a href="#" data-role='button' data-icon='home' class="ui-btn-active">家庭</a></li>
+						<li><a href="#" data-role='button' data-icon='info'>安全</a></li>
+						<li><a href="#" data-role='button' data-icon='eye'>发现</a></li>
+						<li><a href="#" data-role='button' data-icon='user'>我的</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
